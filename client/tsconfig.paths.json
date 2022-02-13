@@ -7,7 +7,9 @@
       "@pages": ["pages"],
       "@pages/*": ["pages/*"],
       "@common": ["common"],
-      "@common/*": ["common/*"]
+      "@common/*": ["common/*"],
+      "@assets": ["assets"],
+      "@assets/*": ["assets/*"]
     }
   }
 }
