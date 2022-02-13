@@ -2,17 +2,17 @@
   /products
 */
 
-export interface Product {
+export interface IProduct {
   id: number;
   price: number;
   name: string;
   imageUrl: string;
 }
 
-export interface GetProdutResponse extends Product {}
+export interface GetProdutResponse extends IProduct {}
 
 export interface PostProductRequest {
-  product: Omit<Product, "id">;
+  product: Omit<IProduct, "id">;
 }
 
 /*
@@ -21,20 +21,20 @@ export interface PostProductRequest {
 
 export interface Cart {
   id: number;
-  product: Product;
+  product: IProduct;
 }
 
 export interface GetCartResponse extends Cart {}
 
 export interface PostCartRequest {
-  product: Product;
+  product: IProduct;
 }
 
 /*
   /orders
 */
 
-export interface OrderDetail extends Product {
+export interface OrderDetail extends IProduct {
   quantity: number;
 }
 
